@@ -1,0 +1,84 @@
+/* camera/camera.wxss */
+
+/* pages/camera.wxss */
+
+.controls {
+  position: relative;
+  top: 5%;
+  display: flex;
+}
+
+.noticeTXT {
+  color: #ccc;
+  text-align: center;
+  position: relative;
+  font-size: 15px;
+  top: 80%;
+  width: 160px;
+  margin: auto;
+  border-radius: 20px;
+  background-color: rgba(100, 100, 100, 100);
+}
+
+.takeBtn {
+  width: 70px;
+  height: 70px;
+  background-color: #ccc;
+  border-radius: 35px;
+  margin: auto;
+}
+
+.btn-content {
+  background-color: #555;
+  width: 100%;
+  height: 30%;
+  display: flex;
+}
+
+page {
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.cropper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cropper-buttons {
+  background-color: rgba(0, 0, 0, 0.95);
+  color: #04b00f;
+}
+
+.cropper-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #e5e5e5;
+}
+
+.cropper-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+
+.cropper-buttons .upload, .cropper-buttons .getCropperImage {
+  width: 50%;
+  text-align: center;
+}

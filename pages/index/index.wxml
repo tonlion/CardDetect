@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <button type='primary' bindtap='startrecognized'>开始识别</button>
+
+  <textarea>{{text}}</textarea>
+</view>

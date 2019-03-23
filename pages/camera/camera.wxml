@@ -1,0 +1,23 @@
+<!--pages/camera.wxml-->
+<view hidden='{{cameraHidden}}' style='width:100%;height:100%;'>
+  <camera mode="normal" device-position="back" flash="auto" binderror="error" style="width: 100%; height: 70%;">
+    <cover-view class="noticeTXT">请将身份证放入框内</cover-view>
+  </camera>
+  <view class='btn-content'>
+    <view class="takeBtn" bindtap='takePhoto'></view>
+  </view>
+</view>
+<view hidden='{{cropHidden}}' style='width:100%;height:100%;'>
+  <import src="weCropper.wxml"></import>
+  <view class="cropper-wrapper">
+    <template is="weCropper" data="{{...cropperOpt}}"></template>
+    <view class="cropper-buttons">
+      <view bindtap="cancel" class="upload">
+        取消
+      </view>
+      <view bindtap="getCropperImage" class="getCropperImage">
+        确定
+      </view>
+    </view>
+  </view>
+</view>
