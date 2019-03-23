@@ -2,8 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "camera/camera",
-    "camera/weCropper"
+    "pages/camera/camera",
+    "pages/camera/weCropper"
   ],
   "window":{
     "backgroundTextStyle":"light",
